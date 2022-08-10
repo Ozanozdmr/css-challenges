@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+/* Cyan: hsl(179, 62%, 43%)
+ Bright Yellow: hsl(71, 73%, 54%)
+  Light Gray: hsl(204, 43%, 93%)
+ Grayish Blue: hsl(218, 22%, 67%) */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Karla", sans-serif;
+}
+body {
+  background: hsl(204, 43%, 93%);
+}
+.container {
+  max-width: 700px;
+  margin: 100px auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.box {
+  padding: 40px 20px;
+}
+.box1 {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 5px;
+  grid-column: 1/3;
+}
+.box1 h2 {
+  color: hsl(179, 62%, 43%);
+  margin-bottom: 20px;
+}
+.box1-p1 {
+  color: hsl(71, 73%, 54%);
+  margin-bottom: 20px;
+  opacity: 1;
+}
+.box1 p {
+  opacity: 0.7;
+}
+.box2 {
+  background-color: hsl(179, 62%, 43%);
+  display: flex;
+  flex-direction: column;
+}
+.box2 h2 {
+  color: white;
+}
+ul {
+  list-style: none;
+}
+
+.btn {
+  display: flex;
+  height: 100%;
+
+  align-items: flex-end;
+}
+.btn a {
+  text-decoration: none;
+  color: white;
+  background-color: hsl(71, 73%, 54%);
+  padding: 10px 90px;
+  border-radius: 5px;
+}
+
+.box3 {
+  background-color: hsl(179, 62%, 60%);
+}

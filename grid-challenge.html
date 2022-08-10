@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title> </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: #edf2f8;
+      }
+      .container {
+        padding: 100px;
+        display: grid;
+        grid-template-areas:
+          "box1 box1 box2 box3"
+          "box4 box5 box5 box3";
+        height: 80vh;
+        gap: 20px;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr 1fr;
+      }
+      .box1 {
+        grid-area: box1;
+        background-color: hsl(263, 55%, 52%);
+        background-image: url(/bg-pattern-quotation.svg);
+        background-repeat: no-repeat;
+        background-position: top 10px right 100px;
+      }
+      .box2 {
+        grid-area: box2;
+        background-color: hsl(217, 19%, 35%);
+      }
+      .box3 {
+        grid-area: box3;
+        background-color: white;
+      }
+      .box4 {
+        grid-area: box4;
+        background-color: white;
+      }
+      .box5 {
+        grid-area: box5;
+
+        background-color: hsl(219, 29%, 14%);
+      }
+      .box {
+        padding: 20px;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+      }
+      img {
+        width: 40px;
+        border-radius: 50%;
+      }
+      .character {
+        display: flex;
+        align-items: center;
+      }
+      .character-info {
+        display: flex;
+        flex-direction: column;
+        padding: 10px 10px 10px 10px;
+      }
+      .character-info h3 {
+        font-size: 15px;
+        color: white;
+      }
+      .box h2 {
+        font-size: 1rem;
+        color: white;
+        padding: 10px;
+      }
+      .box p {
+        padding: 10px;
+        opacity: 70%;
+        color: white;
+      }
+      .character-info p {
+        font-size: 10px;
+        color: wheat;
+        padding: 0px;
+        opacity: 50%;
+      }
+      .box3 h2 {
+        color: black;
+      }
+      .box3 .character-info p {
+        color: black;
+      }
+      .box3 .character-info h3 {
+        color: black;
+      }
+      .box3 p {
+        color: black;
+      }
+      .box4 h2 {
+        color: black;
+      }
+      .box4 .character-info p {
+        color: black;
+      }
+      .box4 .character-info h3 {
+        color: black;
+      }
+      .box4 p {
+        color: black;
+      }
+      @media (max-width: 600px) {
+        .container {
+          grid-template-columns: 1fr;
+        }
+        .box1 {
+          grid-template-columns: 1/2;
+          grid-template-rows: 1;
+        }
+        .box2 {
+          grid-template-columns: 1/2;
+          grid-template-rows: 2;
+        }
+        .box3 {
+          grid-template-columns: 1/2;
+          grid-template-rows: 3;
+        }
+        .box4 {
+          grid-template-columns: 1/2;
+          grid-template-rows: 4;
+        }
+
+        .box5 {
+          grid-template-columns: 1/2;
+          grid-template-rows: 5;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box box1">
+        <div class="character">
+          <img
+            src="/287224652_389010036368510_8347156117591198076_n.jpg"
+            alt=""
+          />
+          <div class="character-info">
+            <h3>Ozan Özdemir</h3>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+        </div>
+        <h2>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias,
+          atque fuga laudantium asperiores itaque veritatis commodi aspernatur
+          vitae nobis libero.
+        </h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos
+          eaque delectus laborum sunt nesciunt officia explicabo ipsam est.
+          Molestias sequi sed enim est iusto deleniti odio voluptatem aliquam
+          architecto commodi delectus dicta dolor, ullam fuga velit earum? Nemo
+          vitae aperiam fugiat velit ut voluptatibus ipsum voluptate.
+          Perspiciatis dolores quibusdam modi!
+        </p>
+      </div>
+      <div class="box box2">
+        <div class="character">
+          <img
+            src="/287224652_389010036368510_8347156117591198076_n.jpg"
+            alt=""
+          />
+          <div class="character-info">
+            <h3>Ozan Özdemir</h3>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+        </div>
+        <h2>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias,
+        </h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos
+          eaque delectus laborum sunt nesciunt officia explicabo ipsam est.
+        </p>
+      </div>
+      <div class="box box3">
+        <div class="character">
+          <img
+            src="/287224652_389010036368510_8347156117591198076_n.jpg"
+            alt=""
+          />
+          <div class="character-info">
+            <h3>Ozan Özdemir</h3>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+        </div>
+        <h2>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias,
+        </h2>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse, culpa
+          ex totam non, quisquam eos itaque vitae accusantium molestias ea at
+          dolor. Corrupti illum ut hic voluptas quas quasi! Nesciunt ullam, vero
+          doloribus, quis dolorem consectetur neque porro culpa nisi quasi
+          dolore eveniet libero blanditiis asperiores ad voluptatibus alias
+          repellat. Ipsa a alias itaque eligendi ex quisquam dignissimos!
+          Repudiandae quae veritatis veniam quia repellat hic maxime cupiditate,
+        </p>
+      </div>
+      <div class="box box4">
+        <div class="character">
+          <img
+            src="/287224652_389010036368510_8347156117591198076_n.jpg"
+            alt=""
+          />
+          <div class="character-info">
+            <h3>Ozan Özdemir</h3>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+        </div>
+        <h2>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias,
+        </h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos
+          eaque delectus laborum sunt nesciunt officia explicabo ipsam est.
+        </p>
+      </div>
+      <div class="box box5">
+        <div class="character">
+          <img
+            src="/287224652_389010036368510_8347156117591198076_n.jpg"
+            alt=""
+          />
+          <div class="character-info">
+            <h3>Ozan Özdemir</h3>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+        </div>
+        <h2>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias,
+        </h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos
+          eaque delectus laborum sunt nesciunt officia explicabo ipsam est.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
